@@ -8,7 +8,7 @@
 **_Steps involved in the project_**
 ```
 1. The pipeline involves extracting data from the Spotify API using Spotipy python module.
-2. Loading data into amazon S3 using EventBridge cron.
+2. Loading data into amazon S3 using EventBridge cron and AWS Lambda Function (Spotify API).
 3. Transforming the data in S3 bucket (raw_data) with S3 putobject as a trigger and loading it into another s3 bucket (processed).
 4. Use AWS Glue Crawlers for cataloging and metadata management (create schema for data stored in processed folder).
 5. Run queries and further analysis using AWS Athena on the processed data.
